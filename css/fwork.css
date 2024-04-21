@@ -6,8 +6,8 @@
     margin: 0;
 }
 *::selection{
-    background-color: var(--main-color);
-    color: #fff;
+    background-color: #fff;
+    color: var(--main-color);
 }
 ::-webkit-scrollbar{
     width: 10px;
@@ -686,11 +686,13 @@ textarea:focus{
     background-color: rgba(0, 0, 0 ,0.6);
 }
 .image-slider .slider{
-    height: 0;
-    width: 0;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
     opacity: 0;
-    display: none;
-    transition: 0.1s;
+    /* display: none; */
+    transition: 0.6s;
 }
 
 .old-image-slider .slider{
@@ -710,6 +712,9 @@ textarea:focus{
     height: 100%;
     width: 100%;
     opacity: 1;
+}
+.old-image-slider .slider.active img{
+    object-fit: cover;
 }
 .image-slider .arrows{
     bottom: 10px;

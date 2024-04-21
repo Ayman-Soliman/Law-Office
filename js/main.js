@@ -121,6 +121,14 @@ function SlideControl() {
         slide.classList.remove('active');
     });
     sliderImages[currentSlide].classList.add('active');
+    if (currentSlide == 0) {
+        leftArrow.classList.add('active');
+        rightArrow.classList.remove('active');
+    }else{
+        leftArrow.classList.remove('active');
+        rightArrow.classList.add('active');
+
+    }
 }
 
 oldSlideControl();
