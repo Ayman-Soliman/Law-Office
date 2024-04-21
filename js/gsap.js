@@ -167,8 +167,8 @@ gsap.to('.inside1',{
     // duration    : 3,
     scrollTrigger:{
         trigger :'.trigger1',
-        start   :'top center',
-        end     :'bottom 20%',
+        start   :'top 30%',
+        end     :'bottom center',
         scrub   : true,
         // markers :true,
         pin     :true,
@@ -181,7 +181,7 @@ gsap.to('.r1',{
     scrollTrigger:{
         trigger :'.r1',
         start   :'top bottom',
-        end     :'top center',
+        end     :'top 10%',
         scrub   : true,
         // markers  :true
     }
@@ -191,8 +191,8 @@ gsap.to('.inside2',{
     // duration    : 3,
     scrollTrigger:{
         trigger :'.trigger2',
-        start   :'top center',
-        end     :'bottom 20%',
+        start   :'top 30%',
+        end     :'bottom 10%',
         scrub   : true,
         // markers :true,
         pin     :true,
@@ -211,12 +211,12 @@ gsap.to('.r2',{
     }
 })
 gsap.to('.inside3',{
-    y           :'-70%',
+    y           :'-75%',
     // duration    : 3,
     scrollTrigger:{
         trigger :'.trigger3',
-        start   :'top center',
-        end     :'bottom 20%',
+        start   :'top 30%',
+        end     :'200% top',
         scrub   : true,
         // markers :true,
         pin     :true,

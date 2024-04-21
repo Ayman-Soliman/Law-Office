@@ -54,6 +54,9 @@ body{
 .nav-bar{
     z-index: 1000;
 }
+.nav-bar .logo{
+    justify-content: flex-end;
+}
 .nav-bar .logo img{
     height: 50px;
 }
@@ -498,7 +501,7 @@ canvas{
 .inside1,
 .inside2,
 .inside3{
-    transform: translateY(140%);
+    transform: translateY(10%);
     /* overflow: hidden; */
 }
 .right{
